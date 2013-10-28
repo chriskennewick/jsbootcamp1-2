@@ -6,7 +6,7 @@ function makeContactRowClickable() {
     if(newUrl.charAt(newUrl.length) != "/") {
       newUrl = newUrl + "/";
     }
-    newUrl = newUrl + $(this).data("contact-guid")
+    newUrl = newUrl + $(this).data("contact-guid");
     window.location.href = newUrl;
   });
 };

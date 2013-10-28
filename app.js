@@ -47,6 +47,14 @@ var db = [
     email: "treknerk1012@comcast.net"
   },
   {
+    guid: "2707a37a-c030-44e8-a03a-7953a03e88a1",
+    firstName: "Chris",
+    lastName: "Kennewick",
+    nickname: "",
+    company: "Code Fellows",
+    email: "chriskennewick@gmail.com"
+  },
+  {
     guid: "5344717e-5433-49ca-9b71-5fc26ad86abc",
     firstName: "Charles Montgomery",
     lastName: "Burns",
@@ -72,6 +80,7 @@ app.get("/", function(req, res) {
   res.redirect("/contacts");
 });
 
+
 app.get("/contacts", function(req, res) {
   res.render("contactlist", {contacts: db});
 });
@@ -94,7 +103,7 @@ app.post("/contacts/:guid", function(req, res) {
   if(record) {
     var formValues = _.pick(req.body, "firstName", "lastName", "nickname", "company", "email");
     _.extend(record, formValues);
-    if(record.nickname = "") {
+    if(record.nickname == "") {
       record.nickname = record.firstName;
     }
     res.redirect("/contacts");
