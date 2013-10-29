@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "node app",
-    "postinstall": "node_modules/.bin/grunt"
+    "postinstall": "node_modules/grunt-cli/bin/grunt"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.7.0",
