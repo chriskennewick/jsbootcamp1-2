@@ -3,16 +3,13 @@ body {
   background: url("images/brushed.png");
 }
 
-th { 
-}
-
 th.ascending:after{
   content:'\f0d8';
   font-family: FontAwesome;
   margin: 5px;
 }
 
-th.descending:after, th:hover:after{
+th.descending:after{
   content:'\f0d7';
   font-family: FontAwesome;
   margin: 5px;
