@@ -1,0 +1,20 @@
+{
+  "name": "jsbootcamp1",
+  "version": "0.0.0",
+  "homepage": "https://github.com/chriskennewick/jsbootcamp1",
+  "authors": [
+    "Chris Kennewick <chriskennewick@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3"
+  }
+}
