@@ -9,6 +9,7 @@
     <!-- Bring In Bootstrap -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
     <!-- Application Styles and Scripts -->
@@ -17,6 +18,7 @@
     <script>
       $(document).ready(function() {
         makeContactRowClickable();
+        makeColumnSortable();
       });
     </script>
   </head>
@@ -26,10 +28,10 @@
     <table class="table table-hover">
       <thead>
         <tr>
-          <th>Last Name</th>
-          <th>First Name</th>
-          <th>Nickname</th>
-          <th>Company</th>
+            <th>Last Name</th>
+            <th>First Name</th>
+            <th>Nickname</th>
+            <th>Company</th>
         </tr>
       </thead>
 

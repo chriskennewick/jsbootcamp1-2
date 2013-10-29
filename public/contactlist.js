@@ -9,4 +9,18 @@ function makeContactRowClickable() {
     newUrl = newUrl + $(this).data("contact-guid");
     window.location.href = newUrl;
   });
-};
+}
+
+function makeColumnSortable(){
+  var head = $('th');
+  head.on('click', function(){
+    if($(this).hasClass('ascending')){
+      $(this).removeClass('ascending');
+      $(this).addClass('descending');
+    }
+    else{
+      $(this).addClass('ascending');
+      $(this).removeClass('descending');
+    }
+  });
+}
