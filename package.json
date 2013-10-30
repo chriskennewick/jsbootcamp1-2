@@ -12,6 +12,7 @@
     "express": "3.4.0",
     "hbs": "2.4.0",
     "underscore": "1.5.2",
+    "grunt": "~0.4.1",
     "grunt-cli": "~0.1.9"
   },
   "scripts": {
@@ -19,7 +20,6 @@
     "postinstall": "node_modules/grunt-cli/bin/grunt"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.7.0",
     "grunt-bower-task": "~0.3.2"
   }
