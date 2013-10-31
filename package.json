@@ -13,14 +13,16 @@
     "hbs": "2.4.0",
     "underscore": "1.5.2",
     "grunt": "~0.4.1",
-    "grunt-bower-task": "~0.3.2",
     "grunt-cli": "~0.1.9",
-    "grunt-contrib-jshint": "~0.7.0"
+    "grunt-contrib-jshint": "~0.7.0",
+    "grunt-bower-install-task": "0.0.2",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "bower": "~1.2.7"
   },
   "scripts": {
     "start": "node app",
     "postinstall": "node_modules/grunt-cli/bin/grunt"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
