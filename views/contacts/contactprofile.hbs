@@ -25,7 +25,11 @@
       </div>
       {{#with contact}}
         <div>
-        <img id="profile-pic" src="/images/contact_default.png"/>
+        <img id="profile-pic" {{#if profilePicture}}
+        src={{profilePicture}}
+        {{else}}
+        src="/images/contact_default.png"
+        {{/if}}/>
         <h2>{{firstName}} {{lastName}} ({{nickname}})</h2>
         </div>
         <div>

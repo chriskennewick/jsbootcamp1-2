@@ -15,6 +15,11 @@ th.descending:after{
   margin: 5px;
 }
 
+td.edit-icon{
+	content:'\f0d7';
+	font-family: FontAwesome;
+}
+
 #profile-page { 
 	text-align: center;
 }
@@ -25,6 +30,8 @@ th.descending:after{
 
 #profile-pic {
 	border-radius: 100px;
+	width: 200px;
+	height: 200px;
 }
 
 #profile-info-table {
