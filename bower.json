@@ -17,15 +17,7 @@
   "dependencies": {
     "jquery": "~2.0.3",
     "bootstrap": "~3.0.0",
-    "parsleyjs": "~1.1.18"
-  },
-  "exportsOverride": {
-    "bootstrap": {
-      "js": "**/*.js",
-      "css": "**/*.css"
-    },
-    "jquery": {
-      "js": "**/*.js"
-    }
+    "parsleyjs": "~1.1.18",
+    "font-awesome": "~4.0.1"
   }
 }
