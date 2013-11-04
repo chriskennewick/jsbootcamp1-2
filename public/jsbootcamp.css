@@ -15,8 +15,26 @@ th.descending:after{
   margin: 5px;
 }
 
+#profile-page { 
+	text-align: center;
+}
 
+#contacts-nav{
+	text-align: left;
+}
 
+#profile-pic {
+	border-radius: 100px;
+}
+
+#profile-info-table {
+	width:300px;
+  margin: 10px auto;
+}
+
+#profile-info-table td{
+	text-align: left;
+}
 #profile-info-table th{
 	line-height: 15px;
 	text-align: left;
@@ -25,4 +43,3 @@ th.descending:after{
 	word-wrap: break-word;
 	color: #a4a7a1;
 }
-

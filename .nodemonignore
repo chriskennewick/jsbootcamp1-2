@@ -1,0 +1,18 @@
+# seriously? ignore git changes
+./.git/*
+
+# package control
+./node_modules/*
+./bower_components/*
+
+# logs
+./npm_debug.log
+
+# os artifacts
+.DS_Store
+
+# ignore client-side js
+./public/*
+
+# ignore tests
+./tests/*

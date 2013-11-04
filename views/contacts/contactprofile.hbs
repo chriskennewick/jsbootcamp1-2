@@ -19,13 +19,13 @@
   </head>
 
   <body>
-    <div>  
-      <div>
+    <div id="profile-page">  
+      <div id="contacts-nav">
         <a href="/contacts">Contacts</a>
       </div>
       {{#with contact}}
         <div>
-        <img src="/images/contact_default.png"/>
+        <img id="profile-pic" src="/images/contact_default.png"/>
         <h2>{{firstName}} {{lastName}} ({{nickname}})</h2>
         </div>
         <div>
