@@ -8,16 +8,16 @@ module.exports = function(grunt) {
     },
     copy: {
       main: {
-        files: [
-          {src: ["bower_components/**"], dest: "public/"}
-        ]
+        files: [{
+          src: ["bower_components/**"],
+          dest: "public/"
+        }]
       }
     },
-    clean : ["bower_components", "public/bower_components", "node_modules"],
-    mocha_phantomjs : {
-      options: {
-      },
-      all : ['tests/**/*.html']
+    clean: ["bower_components", "public/bower_components", "node_modules"],
+    mocha_phantomjs: {
+      options: {},
+      all: ['tests/**/*.html']
     }
   });
 
@@ -29,6 +29,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-mocha-phantomjs');
 
   // Default task(s).
-  grunt.registerTask('default', ['jshint','bower_install','copy']);
+  grunt.registerTask('default', ['jshint', 'bower_install', 'copy']);
   grunt.registerTask('test', ['mocha_phantomjs']);
 };
