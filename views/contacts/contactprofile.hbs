@@ -15,7 +15,9 @@
     
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- Application Styles and Scripts -->
+    <script src="/bower_components/moment/min/moment.min.js"></script>
     <link rel="stylesheet" href="/jsbootcamp.css">
+
   </head>
 
   <body>
@@ -35,7 +37,23 @@
         <div>
         <table id="profile-info-table">
           <tbody>
+          
+            <tr>
+              <th>Age</th>
+            {{#if dateOfBirth}}
+              <td id="age">
 
+                <script>
+                $(document).ready(function() {
+                  var age = moment("{{dateOfBirth}}", "YYYY-MM-DD").month(0).from(moment().month(0),true);
+                  $('#age').text(age);
+                });
+                </script>
+              </td>  
+            {{else}}
+              <td>Unknown</td>
+            {{/if}}
+            </tr>
           {{#if company}}
             <tr>
               <th>Company</th>

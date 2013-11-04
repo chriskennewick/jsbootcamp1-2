@@ -3,6 +3,7 @@
   "firstName": "Homer",
   "lastName": "Simpson",
   "nickname": "Homer",
+  "dateOfBirth" : "1955-05-12",
   "company": "Springfield Nuclear Powerplant",
   "email": "hsimpson74@yahoo.com",
   "profilePicture" : "/images/homer.png"

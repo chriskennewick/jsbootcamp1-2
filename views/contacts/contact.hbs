@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
     
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- Application Styles and Scripts -->
+    <script src="/contact.js"></script>
     <link rel="stylesheet" href="/jsbootcamp.css">
   </head>
 
@@ -36,14 +36,17 @@
             <label for="nickname">Nickname</label>
             <input type="text" class="form-control" id="nickname" name="nickname" placeholder="Nickname" value="{{nickname}}"/>
           </div>
-
+          <div class="form-group">
+            <label for="dateOfBirth">Date of Birth</label>
+            <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" placeholder="YYYY-MM-DD" data-type="dateIso" value="{{dateOfBirth}}"/>
+          </div>
           <div class="form-group">
             <label for="company">Company</label>
             <input type="text" class="form-control" id="company" name="company" placeholder="Company" value="{{company}}"/>
           </div>
 
           <div class="form-group">
-            <label for="email">Email Addr</label>
+            <label for="email">Email Address</label>
             <input type="text" class="form-control" id="email" name="email" placeholder="Email Addrress"  data-type="email" value="{{email}}"/>
           </div>
         {{/with}}

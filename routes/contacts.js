@@ -45,7 +45,7 @@ module.exports = function(app) {
       });
 
     if (record) {
-      var formValues = _.pick(req.body, "firstName", "lastName", "nickname", "company", "email");
+      var formValues = _.pick(req.body, "firstName", "lastName", "nickname", "dateOfBirth", "company", "email");
       _.extend(record, formValues);
       if (record.nickname === "") {
         record.nickname = record.firstName;

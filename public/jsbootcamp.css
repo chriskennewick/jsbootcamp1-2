@@ -20,6 +20,14 @@ td.edit-icon{
 	font-family: FontAwesome;
 }
 
+.form-group{
+	width: 500px;	
+}
+
+.form-group input {
+	background-color: #f3f3f3;
+}
+
 #profile-page { 
 	text-align: center;
 }
