@@ -3,7 +3,7 @@ var db = require("../data/contacts.json"),
 
 module.exports = function(app) {
   app.get("/contacts", function(req, res) {
-    res.render("contactlist", {
+    res.render("contacts/contactlist", {
       contacts: db
     });
   });
@@ -15,7 +15,7 @@ module.exports = function(app) {
       });
 
     if (record) {
-      res.render("contact", {
+      res.render("contacts/contact", {
         contact: record
       });
     } else {
