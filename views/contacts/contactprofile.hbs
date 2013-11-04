@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Code Fellows Contact Manager</title>
+
+    <!-- Bring In jQuery -->
+    <script src="/bower_components/jquery/jquery.js"></script>
+    <script src="/bower_components/parsleyjs/dist/parsley-standalone.min.js"></script>
+
+
+    <!-- Bring In Bootstrap -->
+
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Application Styles and Scripts -->
+    <link rel="stylesheet" href="/jsbootcamp.css">
+  </head>
+
+  <body>
+    <div>
+      
+      {{#with contact}}
+        <img src="/images/contact_default.png"/>
+        {{firstName}}
+        {{lastName}}
+        {{nickname}}
+        {{company}}
+        {{email}}
+      {{/with}}
+
+    </div>
+  </body>
+</html>

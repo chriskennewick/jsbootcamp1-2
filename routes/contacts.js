@@ -15,6 +15,21 @@ module.exports = function(app) {
       });
 
     if (record) {
+      res.render("contacts/contactprofile", {
+        contact: record
+      });
+    } else {
+      res.send("Sorry, the contact with id " + guid + " doesn't exist in the DB.");
+    }
+  });
+
+  app.get("/contacts/edit/:guid", function(req, res) {
+    var guid = req.param("guid"),
+      record = _.findWhere(db, {
+        guid: guid
+      });
+
+    if (record) {
       res.render("contacts/contact", {
         contact: record
       });
@@ -23,7 +38,7 @@ module.exports = function(app) {
     }
   });
 
-  app.post("/contacts/:guid", function(req, res) {
+  app.post("/contacts/edit/:guid", function(req, res) {
     var guid = req.param("guid"),
       record = _.findWhere(db, {
         guid: guid
