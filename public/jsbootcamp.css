@@ -14,3 +14,15 @@ th.descending:after{
   font-family: FontAwesome;
   margin: 5px;
 }
+
+
+
+#profile-info-table th{
+	line-height: 15px;
+	text-align: left;
+	vertical-align: top;
+	width: 80px;
+	word-wrap: break-word;
+	color: #a4a7a1;
+}
+

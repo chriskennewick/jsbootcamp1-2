@@ -19,15 +19,33 @@
   </head>
 
   <body>
-    <div>
-      
+    <div>  
+      <div>
+        <a href="/contacts">Contacts</a>
+      </div>
       {{#with contact}}
+        <div>
         <img src="/images/contact_default.png"/>
-        {{firstName}}
-        {{lastName}}
-        {{nickname}}
-        {{company}}
-        {{email}}
+        <h2>{{firstName}} {{lastName}} ({{nickname}})</h2>
+        </div>
+        <div>
+        <table id="profile-info-table">
+          <tbody>
+
+          {{#if company}}
+            <tr>
+              <th>Company</th>
+              <td>{{company}}</td>
+            </tr>
+          {{/if}}  
+            <tr>
+              <th>Email</th>
+              <td>{{email}}</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        
       {{/with}}
 
     </div>
