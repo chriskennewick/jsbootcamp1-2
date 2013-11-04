@@ -24,5 +24,10 @@
     "start": "node app",
     "postinstall": "node_modules/grunt-cli/bin/grunt"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "chai": "~1.8.1",
+    "grunt": "~0.4.1",
+    "grunt-mocha-phantomjs": "~0.3.0"
+  }
 }
