@@ -3,7 +3,8 @@
  */
 var path = require("path"),
     express = require("express"),
-    _ = require("underscore");
+    _ = require("underscore"),
+    db = require("./data/contacts.json");
 
 
 // Our sample application uses the express framework to abstarct away
@@ -15,62 +16,6 @@ var app = express()
             .set("view engine", "hbs")
             .use(express.static(path.join(__dirname, "public")))
             .use(express.bodyParser());
-
-
-// This is our in memory database to use for this bootstraped app. This
-// is typically stored in an external system like redis, postgresql or
-// mongodb. We store it here to make the sample application easier to
-// run.
-var db = [
-  {
-    guid: "c214d676-a056-4e77-914c-dfa96e5c93b8",
-    firstName: "Homer",
-    lastName: "Simpson",
-    nickname: "Homer",
-    company: "Springfield Nuclear Powerplant",
-    email: "hsimpson74@yahoo.com"
-  },
-  {
-    guid: "a9816058-5e20-4e19-be7a-b9ec320a7a91",
-    firstName: "Marjorie",
-    lastName: "Simpson",
-    nickname: "Marge",
-    company: "",
-    email: "funmom1337@hotmail.com"
-  },
-  {
-    guid: "ba029c24-2229-4439-a280-452bead4f176",
-    firstName: "Jeff",
-    lastName: "Albertson",
-    nickname: "Comic Book Guy",
-    company: "The Android's Dungeon & Baseball Card Shop",
-    email: "treknerk1012@comcast.net"
-  },
-  {
-    guid: "2707a37a-c030-44e8-a03a-7953a03e88a1",
-    firstName: "Chris",
-    lastName: "Kennewick",
-    nickname: "",
-    company: "Code Fellows",
-    email: "chriskennewick@gmail.com"
-  },
-  {
-    guid: "5344717e-5433-49ca-9b71-5fc26ad86abc",
-    firstName: "Charles Montgomery",
-    lastName: "Burns",
-    nickname: "Monty",
-    company: "Springfield Nuclear Powerplant",
-    email: ""
-  },
-  {
-    guid: "0e33a96d-a16c-43e2-be5e-1698393e6dbb",
-    firstName: "Joseph",
-    lastName: "Quimby",
-    nickname: "Diamond Joe",
-    company: "Mayor of Springfield",
-    email: "jquimby@springfield.gov"
-  }
-];
 
 
 // Now we finally define the various URL patterns that our application
